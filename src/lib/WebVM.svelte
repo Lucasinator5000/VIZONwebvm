@@ -318,12 +318,6 @@
             printMessage([e.toString()]);
             return;
         }
-		catch(e)
-		{
-			printMessage(errorMessage);
-			printMessage([e.toString()]);
-			return;
-		}
 		cx.registerCallback("cpuActivity", cpuCallback);
 		cx.registerCallback("diskActivity", hddCallback);
 		cx.registerCallback("diskLatency", latencyCallback);
